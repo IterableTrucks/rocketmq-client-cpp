@@ -25,6 +25,7 @@ fi
 cp -R ${BASEDIR}/../include/*              /root/rpmbuild/SOURCES/rocketmq/include
 cp ${BASEDIR}/../bin/librocketmq.so      /root/rpmbuild/SOURCES/rocketmq/bin
 cp ${BASEDIR}/../bin/librocketmq.a      /root/rpmbuild/SOURCES/rocketmq/bin
+mkdir -p /root/rpmbuild/SPECS
 cp ${BASEDIR}/rocketmq_x64/CENTOS/rocketmq-client-cpp.spec      /root/rpmbuild/SPECS
 
 rpmbuild -bb /root/rpmbuild/SPECS/rocketmq-client-cpp.spec
